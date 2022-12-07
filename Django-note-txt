@@ -3,3 +3,4 @@ use {%    %} to embeded python in html, for example, {% for i in member %}
 <a> hyperlink
 <br> break lines
 <form> create html user form
+<li> list

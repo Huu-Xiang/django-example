@@ -1,8 +1,8 @@
 from django.urls import path
 from . import views
 from django.urls import path, include # new
+#from members import views
 
-app_name = "main"
 
 urlpatterns = [
     path('', views.index, name = 'index'),
@@ -12,7 +12,8 @@ urlpatterns = [
     path('update/<int:id>', views.update, name='update'),
     path('update/updaterecord/<int:id>', views.updaterecord, name='updaterecord'),
     # user ragistration path
-    path("", views.homepage, name="homepage"),
-    path("register", views.register_request, name="register")
+    path('', views.homepage, name='homepage'),
+    path('register', views.register_request, name='register')
+    path("login", views.login_request, name="login")
 
 ]

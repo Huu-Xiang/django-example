@@ -58,3 +58,4 @@ def vote(request, question_id):
 
 def index(request):
     return render(request, 'pages / index.html')
+    
